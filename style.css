@@ -324,7 +324,7 @@ section:nth-child(even){
 .services .xscroll .box p{
     color: var(--light-color);
     font-size: 1.3rem;
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 
 .services .xscroll .box h3{
@@ -348,7 +348,7 @@ section:nth-child(even){
     
 }
 
-.contact-us form{
+.contact form{
     width: auto;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -358,25 +358,25 @@ section:nth-child(even){
     margin: 0 auto;
 }
 
-.contact-us form .inputBox{
+.contact form .inputBox{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact-us form .inputBox .input{
+.contact form .inputBox .input{
     width: 49%;
 }
 
-.contact-us form .inputBox .input span{
+.contact form .inputBox .input span{
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
     color: var(--light-color);
 }
 
-.contact-us form .inputBox .input input,
-.contact-us form .inputBox .input textarea{
+.contact form .inputBox .input input,
+.contact form .inputBox .input textarea{
    background: #eee;
    border-radius: .5rem; 
    padding: 1rem;
@@ -387,14 +387,14 @@ section:nth-child(even){
    width: 100%;
 }
 
-.contact-us form .inputBox .input textarea{
+.contact form .inputBox .input textarea{
     height: 30rem;
     resize: none;
 }
 
 
-.contact-us form .inputBox .input input:focus,
-.contact-us form .inputBox .input textarea:focus{
+.contact form .inputBox .input input:focus,
+.contact form .inputBox .input textarea:focus{
     border: .1rem solid var(--green);
 }
 
@@ -448,6 +448,32 @@ footer .box2 a {
     color: #fff;
     text-decoration: underline;
 }
+
+
+.loader-container{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.loader-container img{
+   width: auto; 
+}
+
+
+.loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+}
+
 
 
 /* media queries */
@@ -506,7 +532,7 @@ footer .box2 a {
         
     }  
 
-    .contact-us form .inputBox .input{
+    .contact form .inputBox .input{
         width: 100%;
     }
 }
