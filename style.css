@@ -38,7 +38,9 @@ header{
     box-shadow: var(--box-shadow);
 }
 
-
+/* .logosvg{
+    width: ;
+} */
 
 header .logo{
     color: var(--black) ;
@@ -347,7 +349,7 @@ section:nth-child(even){
 }
 
 .contact-us form{
-    width: 90rem;
+    width: auto;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: .1rem solid rgba(0, 0, 0, .2);
@@ -463,7 +465,9 @@ footer .box2 a {
         padding: 2rem;
     }
 
-    
+    footer{
+        padding: 1rem 2rem;
+    }
 }
 
 @media (max-width:840px){
